@@ -1,7 +1,14 @@
 {
   "name": "srijan",
   "version": "0.0.0",
+  "repository": {
+    "type": "git",
+    "url":"https://www.github.com/lovika/srijan.git"
+  },
   "author":"rahulyadav20111995",
+  "contributors":[
+    {"name":"Himani Kansal"},
+    {"name":"Lovika Grover"}],
   "private": true,
   "scripts": {
     "start": "node ./bin/www"

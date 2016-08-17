@@ -6,6 +6,7 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
 var routes = require('./routes/index');
+var drawing =  require('./routes/drawing');
 var app = express();
 
 app.set('views', path.join(__dirname, 'views'));
@@ -19,6 +20,7 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', routes);
+app.use('/drawing',drawing);
 
 app.use(function(req, res, next) {
   var err = new Error('Not Found');
